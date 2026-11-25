@@ -1,0 +1,26 @@
+/* Dapur Kilat — page chrome around the canvas. The game itself is drawn
+   on the canvas; this only centers it on a warm kitchen-wall backdrop. */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #2b1d12; }
+body {
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stage { padding: 12px; text-align: center; }
+#game {
+  display: block;
+  width: min(1280px, 96vw);
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  background: #f7e8c9;
+}
+.hint {
+  color: #d8cdb2;
+  font-size: 13px;
+  margin: 10px 0 0;
+}
